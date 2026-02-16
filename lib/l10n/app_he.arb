@@ -1,0 +1,17 @@
+{
+  "@@locale": "he",
+  "appTitle": "מסכם סרטים",
+  "searchTab": "חיפוש",
+  "favoritesTab": "מועדפים",
+  "searchScreenTitle": "מסכם סרטים",
+  "searchHint": "חפש סרט",
+  "searchPrompt": "חפש סרט",
+  "settingsTab": "הגדרות",
+  "yearLabel": "שנת הוצאה: {year}",
+  "typeLabel": "סוג: {type}",
+  "favoritesEmpty": "אין סרטים במועדפים",
+  "changeLanguage": "שינוי שפה",
+  "changeLanguageSubtitle": "שנה את שפת האפליקציה",
+  "languageEnglish": "אנגלית",
+  "languageHebrew": "עברית"
+}

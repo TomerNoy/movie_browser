@@ -1,0 +1,31 @@
+{
+  "@@locale": "en",
+  "appTitle": "Movie Browser",
+  "searchTab": "Search",
+  "favoritesTab": "Favorites",
+  "searchScreenTitle": "Movies Browser",
+  "searchHint": "Search for a movie",
+  "settingsTab": "Settings",
+  "searchPrompt": "Search for a movie",
+  "yearLabel": "Year: {year}",
+  "@yearLabel": {
+    "placeholders": {
+      "year": {
+        "type": "String"
+      }
+    }
+  },
+  "typeLabel": "Type: {type}",
+  "@typeLabel": {
+    "placeholders": {
+      "type": {
+        "type": "String"
+      }
+    }
+  },
+  "favoritesEmpty": "Favorites",
+  "changeLanguage": "Change Language",
+  "changeLanguageSubtitle": "Change the language of the app",
+  "languageEnglish": "English",
+  "languageHebrew": "Hebrew"
+}
