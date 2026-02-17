@@ -1,14 +1,36 @@
 {
   "@@locale": "en",
   "appTitle": "Movie Browser",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
   "searchTab": "Search",
+  "@searchTab": {
+    "description": "Label for the search tab in bottom navigation"
+  },
   "favoritesTab": "Favorites",
-  "searchScreenTitle": "Movies Browser",
+  "@favoritesTab": {
+    "description": "Label for the favorites tab in bottom navigation"
+  },
+  "searchScreenTitle": "Movie Browser",
+  "@searchScreenTitle": {
+    "description": "Title shown in the search screen app bar"
+  },
   "searchHint": "Search for a movie",
+  "@searchHint": {
+    "description": "Hint text inside the search input field"
+  },
   "settingsTab": "Settings",
+  "@settingsTab": {
+    "description": "Label for the settings tab in bottom navigation"
+  },
   "searchPrompt": "Search for a movie",
+  "@searchPrompt": {
+    "description": "Prompt text shown when no search has been performed yet"
+  },
   "yearLabel": "Year: {year}",
   "@yearLabel": {
+    "description": "Displays the release year of a movie",
     "placeholders": {
       "year": {
         "type": "String"
@@ -17,15 +39,165 @@
   },
   "typeLabel": "Type: {type}",
   "@typeLabel": {
+    "description": "Displays the type of a title (movie, series, episode)",
     "placeholders": {
       "type": {
         "type": "String"
       }
     }
   },
-  "favoritesEmpty": "Favorites",
+  "favoritesEmpty": "No favorite movies yet",
+  "@favoritesEmpty": {
+    "description": "Message shown when the favorites list is empty"
+  },
   "changeLanguage": "Change Language",
+  "@changeLanguage": {
+    "description": "Title for the language setting option"
+  },
   "changeLanguageSubtitle": "Change the language of the app",
+  "@changeLanguageSubtitle": {
+    "description": "Subtitle for the language setting option"
+  },
   "languageEnglish": "English",
-  "languageHebrew": "Hebrew"
+  "@languageEnglish": {
+    "description": "Label for the English language option"
+  },
+  "languageHebrew": "Hebrew",
+  "@languageHebrew": {
+    "description": "Label for the Hebrew language option"
+  },
+  "errorNetwork": "A network error occurred. Please check your connection.",
+  "@errorNetwork": {
+    "description": "Error message shown when a network error occurs"
+  },
+  "errorNoResults": "No movies found. Try a different search.",
+  "@errorNoResults": {
+    "description": "Error message shown when a search returns no results"
+  },
+  "errorTooManyResults": "Too many results. Please enter a more specific search term.",
+  "@errorTooManyResults": {
+    "description": "Error message shown when the search query is too broad"
+  },
+  "errorApi": "Something went wrong. Please try again.",
+  "@errorApi": {
+    "description": "Error message shown when an API error occurs"
+  },
+  "errorUnknown": "An unexpected error occurred.",
+  "@errorUnknown": {
+    "description": "Error message shown for unknown errors"
+  },
+  "errorLoadingDetails": "Failed to load movie details.",
+  "@errorLoadingDetails": {
+    "description": "Error message shown when movie details fail to load"
+  },
+  "directorLabel": "Director: {director}",
+  "@directorLabel": {
+    "description": "Displays the director of a movie",
+    "placeholders": {
+      "director": {
+        "type": "String"
+      }
+    }
+  },
+  "actorsLabel": "Actors: {actors}",
+  "@actorsLabel": {
+    "description": "Displays the actors of a movie",
+    "placeholders": {
+      "actors": {
+        "type": "String"
+      }
+    }
+  },
+  "plotLabel": "Plot",
+  "@plotLabel": {
+    "description": "Header for the plot section on the movie details screen"
+  },
+  "ratingLabel": "IMDb Rating: {rating}",
+  "@ratingLabel": {
+    "description": "Displays the IMDb rating of a movie",
+    "placeholders": {
+      "rating": {
+        "type": "String"
+      }
+    }
+  },
+  "runtimeLabel": "Runtime: {runtime}",
+  "@runtimeLabel": {
+    "description": "Displays the runtime of a movie",
+    "placeholders": {
+      "runtime": {
+        "type": "String"
+      }
+    }
+  },
+  "genreLabel": "Genre: {genre}",
+  "@genreLabel": {
+    "description": "Displays the genre of a movie",
+    "placeholders": {
+      "genre": {
+        "type": "String"
+      }
+    }
+  },
+  "ratedLabel": "Rated: {rated}",
+  "@ratedLabel": {
+    "description": "Displays the content rating of a movie",
+    "placeholders": {
+      "rated": {
+        "type": "String"
+      }
+    }
+  },
+  "cachedDataNotice": "Showing cached data (offline)",
+  "@cachedDataNotice": {
+    "description": "Banner message shown when displaying cached data while offline"
+  },
+  "searchHistory": "Recent Searches",
+  "@searchHistory": {
+    "description": "Header for the recent search history section"
+  },
+  "clearHistory": "Clear All",
+  "@clearHistory": {
+    "description": "Button label to clear all search history"
+  },
+  "addToFavorites": "Add to favorites",
+  "@addToFavorites": {
+    "description": "Button label to add a movie to favorites"
+  },
+  "removeFromFavorites": "Remove from favorites",
+  "@removeFromFavorites": {
+    "description": "Button label to remove a movie from favorites"
+  },
+  "addedToFavorites": "Added to favorites",
+  "@addedToFavorites": {
+    "description": "Snackbar message shown after a movie is added to favorites"
+  },
+  "removedFromFavorites": "Removed from favorites",
+  "@removedFromFavorites": {
+    "description": "Snackbar message shown after a movie is removed from favorites"
+  },
+  "retry": "Retry",
+  "@retry": {
+    "description": "Button label to retry a failed operation"
+  },
+  "movieDetailsTitle": "Movie Details",
+  "@movieDetailsTitle": {
+    "description": "Title for the movie details screen"
+  },
+  "search": "Search",
+  "@search": {
+    "description": "Button label for search action"
+  },
+  "clearSearch": "Clear search",
+  "@clearSearch": {
+    "description": "Button label to clear search input"
+  },
+  "clearSearchHistory": "Remove from history",
+  "@clearSearchHistory": {
+    "description": "Button label to remove a search query from history"
+  },
+  "viewMovieDetails": "View movie details",
+  "@viewMovieDetails": {
+    "description": "Semantic label for tappable movie card"
+  }
 }

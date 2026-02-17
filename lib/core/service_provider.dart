@@ -1,6 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
 import 'package:hive/hive.dart';
+import 'package:movie_browser/bloc/movie_details/movie_details_cubit.dart';
 import 'package:movie_browser/bloc/search/search_bloc.dart';
 import 'package:movie_browser/core/locale_notifier.dart';
 import 'package:movie_browser/services/http_service.dart';
@@ -21,7 +22,19 @@ void setupServiceProvider() {
   );
 
   getIt.registerFactory<SearchBloc>(
-    () => SearchBloc(httpService: httpService, logger: logger),
+    () => SearchBloc(
+      httpService: httpService,
+      dbService: localDatabaseService,
+      logger: logger,
+    ),
+  );
+
+  getIt.registerFactory<MovieDetailsCubit>(
+    () => MovieDetailsCubit(
+      httpService: httpService,
+      dbService: localDatabaseService,
+      logger: logger,
+    ),
   );
 }
 

@@ -1,7 +1,11 @@
-abstract class SearchEvent {}
+import 'package:freezed_annotation/freezed_annotation.dart';
 
-class SearchQuerySubmitted extends SearchEvent {
-  final String query;
+part 'search_event.freezed.dart';
 
-  SearchQuerySubmitted(this.query);
+@freezed
+sealed class SearchEvent with _$SearchEvent {
+  const factory SearchEvent.querySubmitted(String query) =
+      SearchQuerySubmitted;
+  const factory SearchEvent.nextPageRequested() = SearchNextPageRequested;
+  const factory SearchEvent.searchReset() = SearchResetRequested;
 }

@@ -24,8 +24,9 @@ class MyApp extends StatelessWidget {
       builder: (context, locale, _) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
+          // showSemanticsDebugger: true,
           theme: ThemeData(
-            colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+            colorScheme: ColorScheme.fromSeed(seedColor: Colors.blueAccent),
           ),
           locale: locale,
           localizationsDelegates: AppLocalizations.localizationsDelegates,

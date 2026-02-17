@@ -15,6 +15,7 @@ migrate_working_dir/
 windows/
 linux/
 macos/
+required.txt
 
 # IntelliJ related
 *.iml
@@ -36,6 +37,11 @@ macos/
 .pub/
 /build/
 /coverage/
+
+# Auto-generated files
+*.freezed.dart
+*.g.dart
+**/l10n/app_localizations*.dart
 
 # Symbolication related
 app.*.symbols

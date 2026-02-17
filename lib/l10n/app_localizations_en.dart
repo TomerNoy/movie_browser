@@ -18,7 +18,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get favoritesTab => 'Favorites';
 
   @override
-  String get searchScreenTitle => 'Movies Browser';
+  String get searchScreenTitle => 'Movie Browser';
 
   @override
   String get searchHint => 'Search for a movie';
@@ -40,7 +40,7 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get favoritesEmpty => 'Favorites';
+  String get favoritesEmpty => 'No favorite movies yet';
 
   @override
   String get changeLanguage => 'Change Language';
@@ -53,4 +53,96 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get languageHebrew => 'Hebrew';
+
+  @override
+  String get errorNetwork =>
+      'A network error occurred. Please check your connection.';
+
+  @override
+  String get errorNoResults => 'No movies found. Try a different search.';
+
+  @override
+  String get errorTooManyResults =>
+      'Too many results. Please enter a more specific search term.';
+
+  @override
+  String get errorApi => 'Something went wrong. Please try again.';
+
+  @override
+  String get errorUnknown => 'An unexpected error occurred.';
+
+  @override
+  String get errorLoadingDetails => 'Failed to load movie details.';
+
+  @override
+  String directorLabel(String director) {
+    return 'Director: $director';
+  }
+
+  @override
+  String actorsLabel(String actors) {
+    return 'Actors: $actors';
+  }
+
+  @override
+  String get plotLabel => 'Plot';
+
+  @override
+  String ratingLabel(String rating) {
+    return 'IMDb Rating: $rating';
+  }
+
+  @override
+  String runtimeLabel(String runtime) {
+    return 'Runtime: $runtime';
+  }
+
+  @override
+  String genreLabel(String genre) {
+    return 'Genre: $genre';
+  }
+
+  @override
+  String ratedLabel(String rated) {
+    return 'Rated: $rated';
+  }
+
+  @override
+  String get cachedDataNotice => 'Showing cached data (offline)';
+
+  @override
+  String get searchHistory => 'Recent Searches';
+
+  @override
+  String get clearHistory => 'Clear All';
+
+  @override
+  String get addToFavorites => 'Add to favorites';
+
+  @override
+  String get removeFromFavorites => 'Remove from favorites';
+
+  @override
+  String get addedToFavorites => 'Added to favorites';
+
+  @override
+  String get removedFromFavorites => 'Removed from favorites';
+
+  @override
+  String get retry => 'Retry';
+
+  @override
+  String get movieDetailsTitle => 'Movie Details';
+
+  @override
+  String get search => 'Search';
+
+  @override
+  String get clearSearch => 'Clear search';
+
+  @override
+  String get clearSearchHistory => 'Remove from history';
+
+  @override
+  String get viewMovieDetails => 'View movie details';
 }

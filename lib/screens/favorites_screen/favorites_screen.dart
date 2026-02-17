@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:movie_browser/core/service_provider.dart';
 import 'package:movie_browser/l10n/app_localizations.dart';
 import 'package:movie_browser/screens/movie_screen.dart/movie_screen.dart';
-import 'package:movie_browser/screens/search_screen/widgets/movie_card.dart';
+import 'package:movie_browser/screens/widgets/movie_card.dart';
 
 class FavoritesScreen extends StatelessWidget {
   const FavoritesScreen({super.key});
@@ -27,16 +27,20 @@ class FavoritesScreen extends StatelessWidget {
             itemCount: favorites.length,
             itemBuilder: (context, index) {
               final movie = favorites[index];
-              return InkWell(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => MovieScreen(movie: movie),
-                    ),
-                  );
-                },
-                child: MovieCard(movie: movie),
+              return Semantics(
+                label: '${movie.title}, ${l10n.viewMovieDetails}',
+                button: true,
+                child: InkWell(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => MovieScreen(movie: movie),
+                      ),
+                    );
+                  },
+                  child: MovieCard(movie: movie),
+                ),
               );
             },
           );
